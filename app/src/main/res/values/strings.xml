@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Feedless Facebook</string>
+    <string name="created_by">by Mattias Larsson Sköld</string>
 </resources>

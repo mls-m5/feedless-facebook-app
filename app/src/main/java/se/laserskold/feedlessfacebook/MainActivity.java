@@ -8,13 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.Window;
-import android.webkit.WebResourceRequest;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.view.*;
+import android.webkit.*;
 
 public class MainActivity extends AppCompatActivity {
     WebView webview = null;
@@ -70,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
                     String host = request.getUrl().getHost();
                     // If WebViewClient is provided, return true means the host application handles the url,
                     // while return false means the current WebView handles the url.
-                    Log.d("feedlessfacebook", host);
-                    Log.d("feedlessfacebook", request.getUrl().toString());
+//                    Log.d("feedlessfacebook", host);
+//                    Log.d("feedlessfacebook", request.getUrl().toString());
                     if (host.contains("facebook")) {
                         return false;
                     }

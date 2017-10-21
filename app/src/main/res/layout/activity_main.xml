@@ -10,8 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="se.laserskold.feedlessfacebook.MainActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/created_by"/>
     <WebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+    </FrameLayout>
 </RelativeLayout>
